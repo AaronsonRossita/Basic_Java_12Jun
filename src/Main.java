@@ -115,6 +115,35 @@ public class Main {
 //            System.out.println();
 //        }
 
+        int size = 4;
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j <= size-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j <= size-i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i; j++) {
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+
         int numToGuess = (int)(Math.random() * 5 + 1);
         System.out.println(numToGuess);
 // WHILE
